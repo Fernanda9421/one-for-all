@@ -14,7 +14,7 @@ VALUES
   ("Freedie Shannon"),
   ("Tyler Isle"),
   ("Fog");
-    
+  
 CREATE TABLE SpotifyClone.Albums(
 	album_id INT PRIMARY KEY AUTO_INCREMENT,
   title VARCHAR(80) NOT NULL,
@@ -90,7 +90,7 @@ VALUES
 CREATE TABLE SpotifyClone.Plans(
 	plan_id INT PRIMARY KEY AUTO_INCREMENT,
   name_plan VARCHAR(15) NOT NULL,
-  price DOUBLE NOT NULL
+  price DECIMAL(3,2) NOT NULL
 ) ENGINE='InnoDB';
 
 INSERT INTO SpotifyClone.Plans(name_plan, price)
